@@ -1,0 +1,39 @@
+{
+  "name": "stylelint-config-alphabetical-order",
+  "version": "0.0.0",
+  "description": "A shareable config for Stylelint that alphabetically orders properties",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "alphabetical",
+    "order"
+  ],
+  "repository": "jeddy3/stylelint-config-alphabetical-order",
+  "license": "MIT",
+  "author": "jeddy3",
+  "exports": "./index.js",
+  "type": "module",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "check": "npm-run-all --parallel check:*",
+    "check:js": "eslint \"**/*.js\"",
+    "check:formating": "prettier \"**/*.{js,md,yml}\" --check",
+    "fix": "npm-run-all --sequential fix:*",
+    "fix:js": "eslint \"**/*.js\" --fix",
+    "fix:formating": "prettier \"**/*.{js,md,yml}\" --write",
+    "release": "np"
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "np": "^10.1.0",
+    "npm-run-all2": "^7.0.2",
+    "prettier": "^3.4.2",
+    "stylelint": "^16.12.0"
+  },
+  "dependencies": {
+    "stylelint-order": "^6.0.4"
+  }
+}
