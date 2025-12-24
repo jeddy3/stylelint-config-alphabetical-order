@@ -27,13 +27,13 @@
     "release": "np"
   },
   "devDependencies": {
-    "eslint": "^9.17.0",
-    "np": "^10.1.0",
-    "npm-run-all2": "^7.0.2",
-    "prettier": "^3.4.2",
-    "stylelint": "^16.12.0"
+    "eslint": "^9.39.2",
+    "np": "^10.2.0",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.7.4",
+    "stylelint": "^16.26.1"
   },
   "dependencies": {
-    "stylelint-order": "^6.0.4"
+    "stylelint-order": "^7.0.0"
   }
 }
