@@ -1,6 +1,6 @@
 # stylelint-config-alphabetical-order
 
-[![NPM version](https://img.shields.io/npm/v/stylelint-config-alphabetical-order.svg)](https://www.npmjs.com/package/stylelint-config-alphabetical-order) [![Actions Status](https://github.com/jeddy3/stylelint-config-alphabetical-order/workflows/node-ci/badge.svg)](https://github.com/jeddy3/stylelint-config-alphabetical-order/actions)
+[![NPM version](https://img.shields.io/npm/v/stylelint-config-alphabetical-order.svg)](https://www.npmjs.com/package/stylelint-config-alphabetical-order) [![Actions Status](https://github.com/jeddy3/stylelint-config-alphabetical-order/actions/workflows/ci.yml/badge.svg)](https://github.com/jeddy3/stylelint-config-alphabetical-order/actions)
 
 A shareable config for [Stylelint](https://stylelint.io) that alphabetically orders properties.
 

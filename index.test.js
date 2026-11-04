@@ -79,25 +79,37 @@ describe("flags warnings with invalid css", () => {
   });
 
   it("has correct warning texts", () => {
-    assert.equal(
-      result.results[0].warnings[0].text,
-      "Expected rule to come before at-rule (order/order)",
-    );
-    assert.equal(
-      result.results[0].warnings[1].text,
-      "Expected custom property to come before rule (order/order)",
-    );
-    assert.equal(
-      result.results[0].warnings[2].text,
-      'Expected "all" to come before "align-content" (order/properties-order)',
-    );
-    assert.equal(
-      result.results[0].warnings[3].text,
-      'Expected "color" to come before "margin-block" (order/properties-order)',
+    assert.deepEqual(
+      result.results[0].warnings.map((warning) => warning.text),
+      [
+        "Expected rule to come before at-rule (order/order)",
+        "Expected custom property to come before rule (order/order)",
+        'Expected "all" to come before "align-content" (order/properties-order)',
+        'Expected "color" to come before "margin-block" (order/properties-order)',
+      ],
     );
   });
 
   it("has correct severity", () => {
     assert.equal(result.results[0].warnings[0].severity, "error");
+  });
+});
+
+describe("flags no warnings when extended by package name", () => {
+  let result;
+
+  beforeEach(async () => {
+    result = await stylelint.lint({
+      code: validCss,
+      config: { extends: "stylelint-config-alphabetical-order" },
+    });
+  });
+
+  it("has no errors", () => {
+    assert.equal(result.errored, false);
+  });
+
+  it("flags no warnings", () => {
+    assert.equal(result.results[0].warnings.length, 0);
   });
 });
