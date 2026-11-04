@@ -2,6 +2,7 @@
 
 ## 3.0.0
 
+- Remove Node.js 20 support
 - Add support for Stylelint 17 and 18
 - Bump stylelint-order to 8 (extending autofix to CSS-in-JS rules containing interpolation)
 
