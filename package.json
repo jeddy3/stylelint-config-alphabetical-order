@@ -14,7 +14,8 @@
   "exports": "./index.js",
   "type": "module",
   "files": [
-    "index.js"
+    "index.js",
+    "CHANGELOG.md"
   ],
   "scripts": {
     "test": "node --test",
