@@ -23,12 +23,10 @@
     "check:formating": "prettier \"**/*.{js,md,yml}\" --check",
     "fix": "npm-run-all --sequential fix:*",
     "fix:js": "eslint \"**/*.js\" --fix",
-    "fix:formating": "prettier \"**/*.{js,md,yml}\" --write",
-    "release": "np"
+    "fix:formating": "prettier \"**/*.{js,md,yml}\" --write"
   },
   "devDependencies": {
     "eslint": "^9.39.2",
-    "np": "^10.2.0",
     "npm-run-all2": "^8.0.4",
     "prettier": "^3.7.4",
     "stylelint": "^16.26.1"
