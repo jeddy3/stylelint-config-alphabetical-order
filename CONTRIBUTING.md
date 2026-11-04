@@ -21,3 +21,5 @@
    npm stage list stylelint-config-alphabetical-order
    npm stage approve <stage-id>
    ```
+
+5. Create a GitHub release.
